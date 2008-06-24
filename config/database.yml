@@ -1,5 +1,7 @@
 # SQLite version 3.x
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
+
+# stores "etc" tables
 development:
   adapter: sqlite3
   database: db/development.sqlite3
@@ -16,4 +18,16 @@ test:
 production:
   adapter: sqlite3
   database: db/production.sqlite3
+  timeout: 5000
+
+
+# stores actual data
+db_1:
+  adapter: sqlite3
+  database: db/db_1.sqlite3
+  timeout: 5000
+
+db_2:
+  adapter: sqlite3
+  database: db/db_2.sqlite3
   timeout: 5000
