@@ -1,0 +1,15 @@
+*~
+.DS_Store
++*#
+.#*
+*.swp
+._*
+
+db/schema.*
+tmp/[^.]*
+log/[^.]*
+
+*.cache
+nohup.out
+.todo
+db/*.sqlite3

@@ -1,0 +1,9 @@
+<div id="person_form">
+	<% form_for :person, :url => url_for(:controller => 'people', :action => 'create') do |f| -%>
+		<p><%= f.label 'Name: ' -%></p>
+		<p><%= f.text_field :name -%></p>
+		<p><%= f.label 'Description:' -%></p>
+		<p><%= f.text_area :description -%></p>
+		<%= f.submit -%>
+	<% end -%>
+</div>
